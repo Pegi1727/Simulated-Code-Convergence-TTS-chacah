@@ -1,0 +1,34 @@
+file,sheet/array_name,column_name,dtype,description
+features_master_frame_features.csv,features.npz,frame_time_s,float64,"Time of each analysis frame in seconds (hop 64 ms, sr=16000)"
+features_master_frame_features.csv,features.npz,rms,float32,Root-mean-square energy of each frame (linear amplitude)
+features_master_frame_features.csv,features.npz,spectral_centroid_hz,float64,"Spectral centroid per frame (Hz), brightness measure"
+features_master_frame_features.csv,features.npz,spectral_bandwidth_hz,float64,Spectral bandwidth per frame (Hz)
+features_master_frame_features.csv,features.npz,zcr,float64,Zero-crossing rate per frame (0-1)
+features_master_frame_features.csv,features.npz,f0_hz,float64,Fundamental frequency per frame (Hz)
+features_master_frame_features.csv,features.npz,tempo,float64,Estimated tempo of the audio (BPM) = 104.17
+features_master_frame_features.csv,features.npz,sr,int64,Audio sample rate (Hz) = 16000
+features_master_frame_features.csv,features.npz,duration,float64,Audio duration in seconds = 250.816
+feats_frame_features.csv,feats.npz,frame_time_s,float64,"Time of each analysis frame in seconds (hop = 250.816/2701 s), aligned with acoustic_summary segments"
+feats_frame_features.csv,feats.npz,rms,float32,Frame RMS energy (linear amplitude)
+feats_frame_features.csv,feats.npz,spectral_centroid_hz,float64,"Frame spectral centroid (Hz); key ""sc"" in feats.npz"
+feats_frame_features.csv,feats.npz,zcr,float64,"Frame zero-crossing rate; ""zcr"" in feats.npz"
+feats_frame_features.csv,f0.npy,f0_hz,float64,F0 estimate per frame (Hz); NaN = unvoiced; range 50-642.3 Hz
+f0_hz.csv,f0.npy,f0_hz,float64,"F0 track (Hz), 2701 frames, 259 NaN unvoiced frames"
+f0_hz.csv,derived,frame_time_s,float64,"Frame time (s), hop ~0.0929 s matching feats.npz"
+y_waveform.csv,y.npy,sample_index,int64,Sample index of the raw waveform
+y_waveform.csv,y.npy,amplitude,float32,"Raw audio waveform samples (float32, range -0.802 to 0.745)"
+acoustic_summary.csv,acoustic_summary.csv,seg,object,"Segment label (S1-S4, four ~63 s segments of the audio)"
+acoustic_summary.csv,acoustic_summary.csv,start,float64,Segment start time (s)
+acoustic_summary.csv,acoustic_summary.csv,end,float64,Segment end time (s)
+acoustic_summary.csv,acoustic_summary.csv,nframes,int64,Number of feature frames in the segment
+acoustic_summary.csv,acoustic_summary.csv,f0_mean,float64,Mean F0 in segment (Hz)
+acoustic_summary.csv,acoustic_summary.csv,f0_var,float64,F0 variance in segment (Hz^2)
+acoustic_summary.csv,acoustic_summary.csv,f0_var_med,float64,F0 variance after median filtering (Hz^2)
+acoustic_summary.csv,acoustic_summary.csv,f0_var_iqr,float64,F0 variance after IQR filtering (Hz^2)
+acoustic_summary.csv,acoustic_summary.csv,rms_mean,float64,Mean frame RMS energy in segment
+acoustic_summary.csv,acoustic_summary.csv,sc_mean,float64,Mean spectral centroid in segment (Hz)
+acoustic_summary.csv,acoustic_summary.csv,zcr_mean,float64,Mean zero-crossing rate in segment
+acoustic_summary.csv,acoustic_summary.csv,he169_count,int64,Count of frames with F0 near the 169 Hz harmonic artifact
+acoustic_summary.csv,acoustic_summary.csv,f0_var_he169,float64,F0 variance after removing 169 Hz harmonic frames (Hz^2)
+acoustic_summary.csv,acoustic_summary.csv,hemed_count,int64,Count of frames retained after median filtering
+acoustic_summary.csv,acoustic_summary.csv,f0_var_hemed,float64,F0 variance after harmonic+median filtering (Hz^2)
