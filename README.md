@@ -101,22 +101,35 @@ If you use this dataset, methodology, or figures in your academic research, plea
 .
 ├── Figures/
 │   ├── ga.png                           # Graphical Abstract
-│   ├── 1.png                            # Figure 1: Methodology Flowchart
-│   ├── 2.png                            # Figure 2: CCI Bar Chart
-│   ├── 3.png                            # Figure 3: F0 Pitch Contour
-│   ├── 4.png                            # Figure 4: Variance Ratios
-│   ├── 5.png                            # Figure 5: Feature Heatmap
-│   ├── f0_median_filter_comparison.png  # Diagnostic: Median Filter Analysis
-│   └── f0_visual_inspection.png         # Diagnostic: Visual F0 Inspection
+│   ├── 1.png                            # Figure 1: Methodology Flowchart (6-Stage Pipeline)
+│   ├── 2.png                            # Figure 2: Code Co-Presence Index (CCI) Distribution
+│   ├── 3.png                            # Figure 3: F0 Pitch Contour & Trajectories
+│   ├── 4.png                            # Figure 4: Acoustic Variance Ratios (Raw vs. Filtered vs. Corrected)
+│   ├── 5.png                            # Figure 5: Multi-Feature Heatmap (RMS, SC, ZCR)
+│   ├── f0_median_filter_comparison.png  # F0 Median Filtering Comparison
+│   └── f0_visual_inspection.png         # Visual Inspection of F0 Contours
+│
 ├── data/
-│   ├── acoustic_feature_data.xlsx       # Master Excel Workbook (6 Sheets)
-│   ├── acoustic_summary.csv             # Summary Statistics Table
-│   ├── data_dictionary.csv              # Full Field Metadata
-│   ├── features_master_frame_features.csv # Master Frame-Level Features
-│   ├── feats_frame_features.csv         # Core Acoustic Features (RMS, SC, ZCR)
-│   ├── f0_hz.csv                        # Extracted Fundamental Frequency (10 ms hop)
-│   └── y_waveform.csv                   # Normalized Waveform Time-Series
-└── README.md
-
-
-
+│   ├── raw/
+│   │   ├── feats.npz                    # Primary acoustic frame-level feature arrays
+│   │   ├── f0.npy                       # Raw fundamental frequency trajectory
+│   │   ├── features.npz                 # Secondary/Master acoustic feature arrays
+│   │   └── y.npy                        # Synthesized audio waveform array
+│   ├── processed/
+│   │   ├── acoustic_summary.csv         # Summary statistics across segments S1–S4
+│   │   ├── f0_hz.csv                    # Calibrated fundamental frequency (Hz)
+│   │   ├── feats_frame_features.csv     # Tabular frame-level acoustic features
+│   │   ├── features_master_frame_features.csv # Aggregated multi-feature dataset
+│   │   ├── y_waveform.csv               # Exported waveform amplitude series
+│   │   └── acoustic_feature_data.xlsx   # Consolidated Excel workbook
+│   └── demo/
+│       ├── code_counts_demo.csv         # Synthetic demo corpus for CCI benchmarking
+│       └── data_dictionary.csv          # Metadata and acoustic variable codebook
+│
+├── codes/
+│   ├── R/
+│   │   ├── 00_setup.R                   # Environment setup and CRAN dependencies
+│   │   ├── 01_load_data_csv.R           # CSV ingestion and validation pipeline
+│   │   ├── 01b_load_data_npz.R          # NPZ/NPY binary data interface
+│   │   ├── 02_segment_summary.R         # Segment-level parametric aggregation
+│   │   ├── 03_variance_analysis.R       # Acoustic variance ratio computation
