@@ -5,6 +5,8 @@ Simulated Code-Convergence in Synthetic Vocal Performance
 
 This repository accompanies the research paper **"Simulated Code-Convergence in Synthetic Vocal Performance,"** which investigates how synthetic speech systems (TTS) handle **code-convergence**—the stylistic alignment of vocal features across different language or dialectic codes—using Burna Boy and Travis Scott as primary case studies.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22669208.svg)](https://doi.org/10.5281/zenodo.22669208)
+[![GitHub Release](https://img.shields.io/badge/release-v0.1.0-blue)](https://github.com/Pegi1727/Simulated-Code-Convergence-TTS-chacah/releases)
 
 ---
 ## 🎨 Graphical Abstract
