@@ -58,6 +58,43 @@ The technical framework operates across **6 distinct stages**—from signal acqu
 | **Figure 4** | Acoustic variance ratios across filtering stages | `Figures/4.png` |
 | **Figure 5** | Multi-feature heatmap (RMS, SC, ZCR) | `Figures/5.png` |
 
+
+---
+
+## 🧠 Conclusion & Discussion
+
+This study demonstrates that **synthetic vocal systems**—although *functionally inert* with respect to social intention—systematically reproduce measurable **code-convergence** patterns. Through the application of the **Code Co-Presence Index (CCI)** and multi-stage acoustic variance analysis, we establish three central findings:
+
+1.  **Convergence is Quantifiable:** The proposed metric provides a robust, token-level measure of stylistic alignment between synthetic outputs and target dialectic codes, effectively bridging acoustics and sociolinguistic theory.
+2.  **Convergence is Robust:** While raw synthesis exhibits elevated variance ($2.11\times$), pitch-correction substantially normalizes the signal to a stable ratio of $1.62\times$, demonstrating that convergence persists beyond recording-level noise and is not merely a tracking artifact.
+3.  **Synthetics Reflect—Not Produce—Social Meaning:** Confirming the thesis of **Algorithmic Indexicality**, the observed convergence reflects the *indexical field* of the training data (Artists: Burna Boy, Travis Scott) rather than emergent sociolinguistic agency within the system itself.
+
+### 🎯 Contributions
+| Contribution | Description |
+| :--- | :--- |
+| **Methodological** | A 6-stage pipeline for synthetic code-convergence measurement |
+| **Theoretical** | Formal integration of Communication Accommodation Theory (CAT) into TTS analysis |
+| **Practical** | Open, reproducible dataset for future work in synthetic sociolinguistics |
+
+### 📎 Limitations & Future Work
+- **Corpus Scope:** Currently limited to two artist-centric codes; future work will expand to multi-dialect and gender-parametric synthesis.
+- **Neural Architectures:** The analysis is agnostic to the underlying TTS architecture; extending to diffusion-based vocoders is a natural next step.
+- **Perceptual Validation:** The hypothesis would be strengthened by listening tests (ABX laddering) to correlate acoustic convergence with perceived stylistic mimicry.
+
+> *This work contributes a formal, measurable foundation for the emerging field of **Synthetic Sociolinguistics**, opening the door to research on how algorithmic voices reshape — yet never autonomously intend — social style.*
+
+---
+
+## 📜 Citation
+
+If you use this dataset, methodology, or figures in your academic research, please cite:
+```bibtex
+@article{merrikhi2026simulated,
+  title  = {Simulated Code-Convergence in Synthetic Vocal Performance},
+  author = {Merrikhi, Pegah},
+  year   = {2026},
+  journal = {Working Paper / Synthetic Sociolinguistics Repository}
+}
 ---
 
 ## 📁 Repository Structure
