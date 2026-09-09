@@ -30,9 +30,15 @@ This table demonstrates the impact of signal processing on variance, confirming 
 <br>
 
 ### 2. Code Co-Presence Index (CCI) Metrics
+---
 The CCI measures the degree of stylistic alignment between the synthetic output and the target linguistic codes.
 
-| Convergence State | $\text{
+| Convergence State | $\text{CCI}_s$ Value | Acoustic Interpretation | Sociolinguistic Meaning |
+| :--- | :---: | :--- | :--- |
+| **Perfect Convergence** | `1.00` | Balanced Code Presence | Maximum stylistic mimicry |
+| **Moderate Convergence** | `0.50 - 0.85` | Partial Code Interaction | Hybrid stylistic profile |
+| **Minimal Convergence** | `0.10 - 0.45` | Code Dominance | Weak convergence detected |
+| **Absolute Dominance** | `0.00` | Single-Code Output | No stylistic convergence |
 ---
 ## 🔬 Methodology Pipeline
 
