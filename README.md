@@ -96,7 +96,7 @@ If you use this dataset, methodology, or figures in your academic research, plea
   author = {Merrikhi, Pegah},
   year   = {2026},
   journal = {Working Paper / Synthetic Sociolinguistics Repository}
-}
+
 
 ---
 
