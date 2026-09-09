@@ -17,7 +17,7 @@ git fetch origin --tags
 
 # Checkout the specific tag (this will put you in a 'detached HEAD' state)
 git checkout v0.1.0
-
+---
 
 ## 🎨 Graphical Abstract
 
