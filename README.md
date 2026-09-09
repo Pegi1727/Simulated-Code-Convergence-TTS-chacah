@@ -86,6 +86,12 @@ This study demonstrates that **synthetic vocal systems**—although *functionall
 > *This work contributes a formal, measurable foundation for the emerging field of **Synthetic Sociolinguistics**, opening the door to research on how algorithmic voices reshape — yet never autonomously intend — social style.*
 
 ---
+## 📜 Citation
+
+If you use this dataset, methodology, or figures in your academic research, please cite:
+
+> **Merrikhi, P. (2026).** *Simulated Code-Convergence in Synthetic Vocal Performance.* Working Paper / Synthetic Sociolinguistics Repository. Available at: [10.5281/zenodo.22669208](https://doi.org/10.5281/zenodo.22669208)
+---
 
 
 
