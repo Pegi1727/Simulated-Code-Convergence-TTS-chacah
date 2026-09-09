@@ -13,23 +13,27 @@ This repository accompanies the research paper **"Simulated Code-Convergence in 
 
 ---
 
-## 📊 Key Results & Empirical Findings
 
-### Variance Ratio & Acoustic Stability
-| Metric | Raw | Median-Filtered | Pitch-Corrected |
+## 📊 Empirical Analysis & Results
+
+The following tables summarize the quantitative findings regarding acoustic stability and code-convergence indices.
+
+### 1. Acoustic Stability & Variance Ratios
+This table demonstrates the impact of signal processing on variance, confirming that convergence is a robust phenomenon.
+
+| Analysis Stage | Variance Ratio ($\sigma^2_{conv} / \sigma^2_{target}$) | Signal Integrity | Status |
 | :--- | :---: | :---: | :---: |
-| **Variance Ratio** | 2.11× | 2.60× | 1.62× |
+| **Raw Synthesis** | $2.11\times$ | High Noise / Unfiltered | ⚠️ Unstable |
+| **Median-Filtered** | $2.60\times$ | Optimized for Outliers | ✅ Refined |
+| **Pitch-Corrected (Final)** | $\mathbf{1.62\times}$ | **Robust Convergence** | ⭐ **Optimal** |
 
-### Code Co-Presence Index (CCI) Scale
-| CCI Component | Value | Interpretation |
-| :--- | :---: | :--- |
-| **Maximal Convergence** | `1.0` | Perfect code co-presence and dialectal balance |
-| **Dominance Boundary** | `0.0` | Complete unilateral dominance by a single code |
+<br>
 
-> **Note:** The corrected variance ratio (1.62×) confirms that synthetic convergence is statistically robust beyond recording-level noise and tracking artifacts.
+### 2. Code Co-Presence Index (CCI) Metrics
+The CCI measures the degree of stylistic alignment between the synthetic output and the target linguistic codes.
 
+| Convergence State | $\text{
 ---
-
 ## 🔬 Methodology Pipeline
 
 The technical framework operates across **6 distinct stages**—from signal acquisition to synthetic convergence verification.
