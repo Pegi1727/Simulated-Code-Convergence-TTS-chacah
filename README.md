@@ -7,6 +7,15 @@ This repository accompanies the research paper **"Simulated Code-Convergence in 
 
 ---
 
+git tag -a v0.1.0 -m "Release 0.1.chacha: Simulated Code-Convergence in Synthetic Vocal Performance
+
+DOI: 10.5281/zenodo.22669208
+Initial release of the complete dataset, methodology, and visualizations.
+"
+
+git push origin v0.1.0
+
+
 ## 🎨 Graphical Abstract
 
 ![Graphical Abstract](Figures/ga.png)
