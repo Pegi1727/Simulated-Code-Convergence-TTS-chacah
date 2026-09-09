@@ -87,18 +87,8 @@ This study demonstrates that **synthetic vocal systems**—although *functionall
 
 ---
 
-## 📜 Citation
-
-If you use this dataset, methodology, or figures in your academic research, please cite:
-```bibtex
-@article{merrikhi2026simulated,
-  title  = {Simulated Code-Convergence in Synthetic Vocal Performance},
-  author = {Merrikhi, Pegah},
-  year   = {2026},
-  journal = {Working Paper / Synthetic Sociolinguistics Repository}
 
 
----
 
 ## 📁 Repository Structure
 ```text
@@ -121,3 +111,15 @@ If you use this dataset, methodology, or figures in your academic research, plea
 │   ├── f0_hz.csv                        # Extracted Fundamental Frequency (10 ms hop)
 │   └── y_waveform.csv                   # Normalized Waveform Time-Series
 └── README.md
+---
+
+## 📜 Citation
+
+If you use this dataset, methodology, or figures in your academic research, please cite:
+```bibtex
+@article{merrikhi2026simulated,
+  title  = {Simulated Code-Convergence in Synthetic Vocal Performance},
+  author = {Merrikhi, Pegah},
+  year   = {2026},
+  journal = {Working Paper / Synthetic Sociolinguistics Repository}
+}
